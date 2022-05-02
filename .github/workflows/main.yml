@@ -25,8 +25,8 @@ jobs:
           - with: 
               go-version: ${{ matrix.go }}
             id: go
-            name: Check-in
-            user: actions/checkout@v2
-            name: Pascal
-            run: 
+          - name: Check-in
+          - user: actions/checkout@v2
+          - name: Pascal
+          - run: 
                    echo "Hallo World"
