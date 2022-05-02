@@ -8,8 +8,6 @@ jobs:
   # This workflow contains a single job called "build"
 
   deploy:  
-      # Runs a single command using the runners shell
-      - name: X-Code
         runs-on: macos-latest
         strategy:
           max-parallel: 20
