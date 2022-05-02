@@ -14,7 +14,6 @@ jobs:
           fail-fast: false
           matrix: 
             go: [1.1, 1.1, 1.1, 1.4, 1.4, 1.5, 1.5, 1.1, 1.1, 1.1  ]
-            #flag: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T]
         timeout-minutes: 36
         env:
             NUM_JOBS: 200
