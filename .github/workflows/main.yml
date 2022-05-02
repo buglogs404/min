@@ -32,7 +32,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/setup-go@v1
 
- deploy:  
+  deploy:  
       # Runs a single command using the runners shell
       - name: X-Code
         runs-on: macos-latest
