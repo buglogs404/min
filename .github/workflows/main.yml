@@ -20,13 +20,11 @@ jobs:
             JOB: ${{ matrix.go }}
 
         steps:
-          - name: Set up Go ${{ matrix.go }}
-          - uses: actions/setup-go@v1
-          - with: 
+           name: Set up Go ${{ matrix.go }}
+           uses: actions/setup-go@v1
+           user: actions/checkout@v2
+           with: 
               go-version: ${{ matrix.go }}
-            id: go
-          - name: Check-in
-          - user: actions/checkout@v2
-          - name: Pascal
-          - run: 
-                   echo "Hallo World"
+           id: go
+           run: 
+               echo "Hallo World"
