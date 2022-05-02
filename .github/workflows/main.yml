@@ -11,26 +11,6 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 50
-      fail-fast: false
-      matrix: 
-        go: [1.1,1.2]
-        flag: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    timeout-minutes: 360
-    env:
-        NUM_JOBS: 50
-        JOB: ${{ matrix.go }}
-    
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: Set up Go ${{ matrix.go }}
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/setup-go@v1
 
   deploy:  
       # Runs a single command using the runners shell
